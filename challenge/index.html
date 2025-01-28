@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Contact Us</h1></header>
+    <main>
+      <form action="/challenge " method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul class="userinfo">
+            <li>
+              <label for="username">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="username"
+                required
+                placeholder="John Doe"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your email address</label>
+              <input
+                type="text"
+                name="email"
+                id="useremail"
+                required
+                placeholder="johndoe@gmail.com"
+              />
+            </li>
+            <li>
+              <label for="usernumber">Your phone number</label>
+              <input
+                type="number"
+                name="phone"
+                id="usernumber"
+                required
+                placeholder="123 456 7890"
+              />
+            </li>
+            <li>
+              <label for="usermessage">Your message</label>
+              <textarea
+                name="message"
+                id="usermessage"
+                placeholder="Your message..."
+                required rows="8"
+              ></textarea>
+            </li>
+            <li>
+              <label for="wherefind">Where did you find us</label>
+              <select id="wherefind" name="wherefind">
+                <option>Web search</option>
+                <option>Word of mouth</option>
+                <option>Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="howreply">
+              <input
+                type="radio"
+                id="contact-phone"
+                name="contact"
+                value="phone"
+                required
+              />
+              <label for="contact-phone">Call me</label>
+            </li>
+            <li class="howreply">
+              <input
+                type="radio"
+                id="contact-email"
+                name="contact"
+                value="email"
+                required
+              />
+              <label for="contact-email">Send me an email</label>
+            </li>
+            <li class="howreply">
+              <input
+                type="radio"
+                id="contact-none"
+                name="contact"
+                value="none"
+                required
+              />
+              <label for="contact-none">Don't reply</label>
+            </li>
+            <li class="howreply">
+                <input type="checkbox" id="agree-terms" name="terms" required />
+                <label for="agree-terms">Accept Terms</label>
+              </li>
+          </ul>
+        </section>
+       
+        <section class="buttons">
+          <button type="clear" id="clear">Clear</button>
+          <button type="submit" id="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

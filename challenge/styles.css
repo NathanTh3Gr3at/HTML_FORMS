@@ -1,0 +1,98 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(198, 216, 249);
+}
+h1 {
+  text-align: center;
+  color: rgb(32, 5, 63);
+  margin: 2rem;
+}
+form {
+  width: 40rem;
+  margin: auto;
+  background-color: rgb(208, 219, 238);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+textarea {
+  resize: vertical;
+  height:auto;
+}
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  border-radius:4px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.25rem;
+  color: rgb(61, 58, 58);
+}
+.userinfo input,.userinfo select{
+     height:2rem;
+}
+input:focus,
+textarea:focus {
+  background-color: rgb(219, 190, 253);
+  color: rgb(32, 5, 63);
+  border-color: rgb(32, 5, 63);
+}
+
+button {
+  display: block;
+  font: inherit;
+  background-color: rgb(32, 5, 63);
+  color: rgb(22, 7, 40);
+  border: 1px solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(52, 14, 95);
+  color:white;
+  border-color: rgb(52, 14, 95);
+}
+.howreply {
+  display: flex;
+}
+.howreply input {
+  margin-right: 0.5rem;
+  width: auto;
+}
+.howreply:last-child {
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  
+  justify-content: flex-end;
+}
+#submit {
+  margin-left: 0.5rem;
+  background-color: rgb(127, 155, 207);
+}
+#clear{
+    background-color: rgb(208, 219, 238);
+    
+}
+#clear:hover{
+    background-color: rgb(154, 55, 55);
+    color:rgb(23, 12, 12)
+
+}
